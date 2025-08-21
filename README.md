@@ -40,7 +40,7 @@ Once the script has finished training, open a new terminal in the same project d
 code
 Bash
 tensorboard --logdir logs/fit
-This will start the TensorBoard server. Open your web browser and navigate to the URL provided in the terminal (usually http://localhost:6006/).
+This will start the TensorBoard server. Open your web browser and navigate to the URL provided in the terminal.
 Special Instructions for Google Colab / Jupyter
 If you are running this in a notebook environment like Google Colab, you can launch TensorBoard directly within the notebook using a "magic command". Run this in a new cell after the training cell has completed:
 code
@@ -76,7 +76,7 @@ The model is compiled with the adam optimizer and categorical_crossentropy loss 
 The model.fit() function is called, and the tensorboard_callback is passed via the callbacks list. This instructs Keras to send logs to TensorBoard at the end of each epoch.
 
 7. Project Structure
-code
+code:
 Code
 .
 ├── cnn_mnist_tensorboard.py  # The main Python script for training the model
